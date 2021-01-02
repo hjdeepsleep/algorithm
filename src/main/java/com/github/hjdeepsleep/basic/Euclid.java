@@ -8,7 +8,7 @@ package com.github.hjdeepsleep.basic;
  */
 public class Euclid {
 
-    public double gcd(int m, int n) {
+    public int gcd(int m, int n) {
         if (m < n) { // swap
             int tmp = m;
             m = n;
@@ -20,5 +20,12 @@ public class Euclid {
         }
 
         return gcd(n, m % n);
+    }
+
+    public int gcd2(int m, int n) {
+        if (n == 0) {
+            return m;
+        }
+        return gcd2(n, m % n);
     }
 }

@@ -5,6 +5,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+/**
+ * 피보나치 수열 : 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233
+ */
 class FibonacciTest {
 
     @DisplayName("n번째 피보나치 수 구하기")
